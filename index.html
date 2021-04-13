@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kefir Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-third">
+                <h1 class="title">
+                    Kefir Calculator!
+                  </h1>
+                  <p class="subtitle">
+                    Bereken hoeveel suiker, water en waterkefirkorrels je nodig hebt voor je drankje.
+                  </p>
+
+                  <h2>
+                    Pas hieronder de ratios aan voor de formule
+                  </h2>
+                  <form>
+                    <label for="formule-water">Delen water:&nbsp;</label>
+                    <input type="number" id="formule-water" name="formule-water" value="10">
+                    <br>
+                    <label for="formule-suiker">Delen Suiker:</label>
+                    <input type="number" id="formule-suiker" name="formule-suiker" value="0.7" step="0.1">
+                  </form>
+                  <p class="pt-4 is-size-7">Omdat het fermenteren afhankelijk is van het weer kun je er voor kiezen om in de zomer de verhouding water iets omhoog te doen. Als je van zoete waterkefir houdt, kies van een suikerwaarde van 0.9. Als je liever je waterkefir zuur drinkt, kies dan suikerwaarde van 0.5.</p>
+            </div>
+            <div class="column is-flex is-flex-direction-column is-align-content-center">
+              <div id="bereken-element" class="">
+                <div class="">
+                  <label for="kefir-korrels">Hoeveel gram waterkefirkorrels heb je?</label>
+                  <input type="number" id="kefir-korrels" name="kefir-korrels">
+                  <p>Dan heb je <strong><span id="totaal-water"></span> ml</strong> water nodig en <strong><span id="totaal-water-suiker"></span> gram</strong> suiker.</p>
+                </div>
+                <div class="">
+                  <label for="kefir-water">Hoeveel ml waterkefir wil je maken?</label>
+                  <input type="number" id="kefir-water" name="kefir-water">
+                  <p>Dan heb je <strong><span id="totaal-korrels"></span> gram</strong> korrels nodig en <strong><span id="totaal-korrels-suiker"></span> gram</strong> suiker.</p>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Gemaakt door Odin. De formule is van de <a href="https://www.kefirshop.nl/">kefirshop</a>.
+      </p>
+    </div>
+  </footer>
+
+  </body>
+  <script src="javascript.js"></script>
+</html>
